@@ -1,0 +1,520 @@
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/*NAVBAR STYLES*/
+#navbar_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007AEA;
+    height: 70px;
+}
+
+#navbar_container img {
+    width: 70px;
+}
+
+#navbar_container h1 {
+    color: white;
+}
+
+.navbar_links a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar_links a:hover {
+    color: #00378A;
+}
+
+.navbar_login a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar_login a:hover {
+    color: #00378A;
+}
+
+#menu_icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+#menu_list {
+    background-color: #005eeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    padding: 15px;
+    gap: 20px;
+    z-index: 1;
+}
+
+#menu_list a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu_list a:nth-child(5) {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #00378A;
+}
+
+#menu_list a:nth-child(6) {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #00378A;
+}
+
+/*MAIN TITLE ON THE PAGE STYLES*/
+.title_main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*LOGIN SCREEN STYLES*/
+.auth_container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #007AEA;
+    width: 35%;
+    height: 50%;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.auth_container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth_container h5 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.auth_container a {
+    text-decoration: none;
+    color: white;
+}
+
+.auth_container a:hover {
+    color: #00378A;
+}
+
+.auth_inputs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.auth_inputs input {
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+    border-style: none;
+    padding: 10px;
+}
+
+.auth_inputs div {
+    display: flex;
+    justify-content: center;
+}
+
+.auth_inputs .buttons {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.buttons:hover {
+    background-color: #00378A;
+    color: white;
+    cursor: pointer;
+}
+
+/*CHOOSE REGISTER TYPE STYLES*/
+.register_container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #007AEA;
+    width: 60%;
+    height: 60%;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.register_container div h3 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#icon_hire {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#icon_care {
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#icon_hire:hover {
+    color: #00378A;
+}
+
+#icon_care:hover {
+    color: #00378A;
+}
+
+/*CARE REGISTER STYLES*/
+.register_care {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007AEA;
+    width: 40%;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.register_care h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form_container label,
+.form_container input,
+.form_container textarea {
+    margin: 5px 0;
+    resize: none;
+
+}
+
+.form_container input,
+.form_container textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.user_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#file {
+    display: none;
+}
+
+#uploadBtn {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: #00378A;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0.644);
+    position: absolute;
+    left: 60%;
+    top: 13%;
+}
+
+.camera_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.imgUp {
+    display: flex;
+    justify-content: center;
+}
+
+/*ABOUT STYLES*/
+.event-text {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+}
+
+.event-text h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.event-text p {
+    color: #58575a;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.event-text p strong {
+    font-weight: bold;
+    color: black;
+}
+
+.event-text p strong::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+/*CONTACTS STYLES*/
+.contacts_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_container h2 {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+#contactIcon1,
+#contactIcon2,
+#contactIcon3 {
+    width: 100px;
+    height: 100px;
+    color: #00378A;
+}
+
+/*POLICIES STYLES*/
+.privacy-policy {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+.privacy-policy h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.privacy-policy p {
+    margin: 15px 0;
+}
+
+.privacy-policy p span::before {
+    content: "•";
+    margin-right: 5px;
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 720px) {
+
+    /*NAVBAR*/
+    .navbar_links,
+    .navbar_login {
+        display: none;
+    }
+
+    #navbar_container img {
+        width: 60px;
+    }
+
+    #navbar_container h1 {
+        display: none;
+    }
+
+    /*SLIDER*/
+    #slick_slider {
+        display: none;
+    }
+
+    /*LOGIN SCREEN*/
+    .auth_container {
+        width: 100%;
+        height: 490px;
+        border-radius: 0px;
+    }
+
+    .title_main {
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .auth_inputs {
+        height: 350px;
+    }
+
+    .auth_inputs h3 {
+        font-size: 25px;
+    }
+
+    .auth_inputs input {
+        height: 25%;
+        font-size: 15px;
+    }
+
+    .auth_inputs .buttons {
+        width: 120px;
+        height: 50px;
+        border-radius: 15px;
+        border-style: none;
+        margin-top: 20px;
+    }
+
+    .auth_inputs h5 {
+        margin-top: 70px;
+        font-size: 20px;
+    }
+
+    /*REGISTER TYPE SCREEN*/
+    .register_container {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    /*CARE REGISTER SCREEN*/
+    .register_care {
+        width: 100%;
+        border-radius: 0PX;
+    }
+
+    .form_container input {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    #uploadBtn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 12%;
+
+    }
+
+    /*ABOUT SCREEN*/
+    .event-text {
+        width: 100%;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .event-text p {
+        font-size: 20px;
+    }
+
+    /*CONTACT SCREEN*/
+    .contacts_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*CAREGIVER SCREEN*/
+
+.cuidadores-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #007AEA;
+    margin: 30px 30px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cuidadores-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.cuidadores-img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    filter: brightness(1.5);
+}
+.icon-large {
+    font-size: 40px;
+}
+.ver-perfil-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #17477a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-perfil-btn:hover {
+    background-color: #0056b3;
+}
+
+.teste-img {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media only screen and (min-width: 721px) {
+    #menu_icon {
+        display: none;
+    }
+}
